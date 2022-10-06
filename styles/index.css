@@ -4,13 +4,14 @@ body {
 	background-color: #181818;
 	font-family: "Century Gothic", Futura, sans-serif;
 	width: 100%;
-	height: 100%;
+	height: 200vh;
 }
 
-/* mobile navbar */
+/*  beginning of mobile navbar */
 
 @media (max-width: 390px) {
 	.nav-container {
+		position: fixed;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -30,11 +31,7 @@ body {
 		font-size: 18px;
 	}
 	.nav-item.burger {
-		display: flex;
-		flex-direction: column;
-	}
-	.nav-item.burger > * {
-		display: block;
+		transform: translate(70px, 0px);
 	}
 	.burger-bar {
 		color: white;
@@ -42,11 +39,11 @@ body {
 	}
 	.burger-nav {
 		position: fixed;
-		transform: translate(-20px, 140px);
+		transform: translate(-20px, 150px);
 		display: flex;
 		flex-direction: column;
 		background-color: #fff;
-		height: 200px;
+		height: 240px;
 		width: 100vw;
 		align-items: center;
 		text-align: center;
@@ -60,11 +57,25 @@ body {
 		width: 100%;
 		height: 100%;
 	}
-	.burger-nav-link-container:nth-of-type(1) {
+
+	/* background color change when user hovers over link */
+	.burger-nav-link-container.tech:hover {
+		background-color: #eee;
+	}
+	.burger-nav-link-container.art:hover {
+		background-color: #eee;
+	}
+	.burger-nav-link-container.design:hover {
+		background-color: #eee;
+	}
+	.burger-nav-link-container.blog:hover {
 		background-color: #eee;
 	}
 
 	.burger-nav-link {
 		text-decoration: none;
+		color: black;
+		font-weight: bold;
 	}
 }
+/*  End of mobile navbar */

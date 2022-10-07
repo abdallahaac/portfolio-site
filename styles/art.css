@@ -5,18 +5,23 @@ body {
 	font-family: "Century Gothic", Futura, sans-serif;
 	width: 100%;
 	height: 200vh;
+	overflow-x: hidden;
 }
 
-/*  beginning of responsive navbar */
-
 @media (max-width: 390px) {
+	/*  beginning of responsive navbar */
+
 	.nav-container {
 		position: fixed;
+		top: -11px;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		margin: 10px 20px;
 		flex-wrap: wrap;
+		z-index: 2;
+		width: 100%;
+		background-color: #181818;
 	}
 	.nav-item {
 		display: none;
@@ -31,7 +36,7 @@ body {
 		font-size: 18px;
 	}
 	.nav-item.burger {
-		transform: translate(70px, 0px);
+		transform: translate(40px, 0px);
 	}
 	.burger-bar {
 		color: white;
@@ -60,7 +65,7 @@ body {
 		height: 100%;
 	}
 	.burger-bar.closed {
-		transform: translate(-40px, 0px);
+		transform: translate(-80px, 0px);
 		visibility: hidden;
 	}
 
@@ -82,5 +87,26 @@ body {
 		color: black;
 		font-weight: bold;
 	}
+	/*  End of responsive navbar */
+
+	main {
+		display: flex;
+		justify-content: center;
+	}
+	.art-container {
+	}
+	.art-post-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transform: translate(0px, 100px);
+		width: 100%;
+		height: 100%;
+		flex-direction: column;
+	}
+	.art-post-img {
+		width: 330px;
+		height: 100%;
+		z-index: 1;
+	}
 }
-/*  End of responsive navbar */

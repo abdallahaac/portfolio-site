@@ -23,11 +23,25 @@
 			</nav>
 
 			<!-- burger menu only displays on mobile -->
+
 			<nav class="nav-item burger">
-				<img class="burger-bar" src="/assets/burger-bar.svg" alt="s" />
+				<img
+					class="burger-bar"
+					id="burger-bar-img"
+					src="/assets/burger-bar.svg"
+					alt="s"
+				/>
+			</nav>
+			<nav class="nav-item burger">
+				<img
+					class="burger-bar closed"
+					id="burger-bar-closed-img"
+					src="/assets/closed-burger.svg"
+					alt="s"
+				/>
 			</nav>
 
-			<nav class="burger-nav">
+			<nav class="burger-nav" id="expanded-burger-nav">
 				<div class="burger-nav-link-container tech">
 					<a class="burger-nav-link tech" href="">Technical Projects</a>
 				</div>
@@ -43,5 +57,6 @@
 			</nav>
 		</header>
 		<!-- end of navbar code -->
+		<script src="index.js"></script>
 	</body>
 </html>

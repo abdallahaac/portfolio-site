@@ -8,7 +8,7 @@ body {
 	overflow-x: hidden;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 900px) {
 	/*  beginning of responsive navbar */
 
 	.nav-container {
@@ -35,8 +35,11 @@ body {
 		color: #fff;
 		font-size: 18px;
 	}
-	.nav-item.burger {
-		transform: translate(40px, 0px);
+	#burger-bar-img {
+		position: absolute;
+		margin-right: 30px;
+		right: 0;
+		top: 20px;
 	}
 	.burger-bar {
 		color: white;
@@ -66,7 +69,10 @@ body {
 		height: 100%;
 	}
 	.burger-bar.closed {
-		transform: translate(-80px, 0px);
+		position: absolute;
+		margin-right: 30px;
+		right: 0;
+		top: 20px;
 		visibility: hidden;
 	}
 
@@ -87,6 +93,28 @@ body {
 		text-decoration: none;
 		color: black;
 		font-weight: bold;
+	}
+	main {
+		display: flex;
+		justify-content: center;
+	}
+
+	.graphic-post-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transform: translate(0px, 100px);
+		width: 100%;
+		height: 100%;
+		flex-direction: column;
+	}
+	.graphic-post-img {
+		width: 330px;
+		height: 100%;
+		z-index: 1;
+	}
+	.graphic-post-title {
+		color: white;
 	}
 }
 /*  End of responsive navbar */

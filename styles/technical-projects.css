@@ -97,6 +97,7 @@ body {
 	}
 	main {
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		transform: translate(0px, 100px);
@@ -130,6 +131,17 @@ body {
 		border-bottom: 1px solid #fff;
 		letter-spacing: 1.5px;
 		line-height: 1.5;
+	}
+	section {
+		background-color: #41414115;
+		border-radius: 6px;
+		margin: 10px;
+	}
+	section > a > img,
+	section > video {
+		width: 300px;
+		height: 200px;
+		object-fit: cover;
 	}
 }
 /*  End of responsive navbar */

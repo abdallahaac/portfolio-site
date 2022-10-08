@@ -54,6 +54,7 @@ body {
 		text-align: center;
 		justify-content: center;
 		visibility: hidden;
+		box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 5px;
 	}
 
 	.burger-nav-link-container {

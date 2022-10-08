@@ -54,6 +54,7 @@ body {
 		text-align: center;
 		justify-content: center;
 		visibility: hidden;
+		box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 5px;
 	}
 
 	.burger-nav-link-container {
@@ -86,6 +87,28 @@ body {
 		text-decoration: none;
 		color: black;
 		font-weight: bold;
+	}
+	main {
+		display: flex;
+		justify-content: center;
+	}
+
+	.graphic-post-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transform: translate(0px, 100px);
+		width: 100%;
+		height: 100%;
+		flex-direction: column;
+	}
+	.graphic-post-img {
+		width: 330px;
+		height: 100%;
+		z-index: 1;
+	}
+	.graphic-post-title {
+		color: white;
 	}
 }
 /*  End of responsive navbar */

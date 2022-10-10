@@ -119,3 +119,65 @@ body {
 	}
 }
 /*  End of responsive navbar */
+
+@media (min-width: 900px) {
+	.burger-nav {
+		display: none;
+	}
+	.nav-item.burger {
+		display: none;
+	}
+	.nav-container {
+		position: relative;
+		position: sticky;
+		top: 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		text-decoration: none;
+		background-color: #181818;
+	}
+	.nav-item {
+		display: flex;
+		justify-content: space-evenly;
+		width: 100%;
+		font-size: 165x;
+		color: #fff;
+	}
+	.nav-item.name h1 > a {
+		text-decoration: none;
+		color: #fff;
+		font-size: 18px;
+	}
+
+	.nav-heading {
+		text-decoration: none;
+		font-size: 20px;
+		color: #fff;
+		font-weight: normal;
+		animation: bounce 1s infinite;
+	}
+
+	.nav-heading.contact {
+		background-color: #fff;
+		color: black;
+		font-weight: bold;
+		padding: 10px 14px;
+		border-radius: 6px;
+		animation: bounce 1s infinite;
+	}
+	#contact-btn {
+		animation: bounce 1s infinite;
+	}
+	@keyframes bounce {
+		0%,
+		100% {
+			transform: translateY(-25%);
+			animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+		}
+		50% {
+			transform: translateY(0);
+			animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+		}
+	}
+}

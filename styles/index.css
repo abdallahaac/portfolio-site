@@ -191,6 +191,10 @@ body {
 		border-radius: 6px;
 		animation: bounce 1s infinite;
 	}
+	.nav-heading.contact:hover {
+		background-color: #dadada;
+		transition: all 0.1s;
+	}
 	@keyframes bounce {
 		0%,
 		100% {
@@ -206,6 +210,7 @@ body {
 	.change-background-on-hover:hover {
 		background-color: rgba(226, 226, 226, 0.068);
 		border-radius: 6px;
+		transition: all 0.1s ease-in-out;
 	}
 
 	.dropdown-menu {
@@ -235,8 +240,5 @@ body {
 		text-decoration: none;
 		color: white;
 		font-weight: normal;
-	}
-	.dropdown-menu:hover {
-		visibility: visible;
 	}
 }

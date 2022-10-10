@@ -149,13 +149,16 @@ body {
 		color: #fff;
 		font-size: 18px;
 	}
+	.nav-item.info {
+		align-items: center;
+	}
 
-	#name:hover {
+	.underline:hover {
 		-webkit-transition: border-color 0.9s ease;
 		transition: border-color 0.9s ease;
 	}
 
-	#name:after {
+	.underline:after {
 		content: "";
 		display: block;
 		width: 0;
@@ -165,7 +168,7 @@ body {
 		transition: width 0.9s;
 	}
 
-	#name:hover::after {
+	.underline:hover::after {
 		width: 100%;
 		-webkit-transition: width 0.9s;
 		transition: width 0.9s;
@@ -176,6 +179,7 @@ body {
 		font-size: 20px;
 		color: #fff;
 		font-weight: normal;
+		padding: 10px;
 	}
 
 	.nav-heading.contact {
@@ -197,5 +201,42 @@ body {
 			transform: translateY(0);
 			animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
 		}
+	}
+
+	.change-background-on-hover:hover {
+		background-color: rgba(226, 226, 226, 0.068);
+		border-radius: 6px;
+	}
+
+	.dropdown-menu {
+		visibility: hidden;
+		position: absolute;
+		display: flex;
+
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin-top: 20px;
+		background-color: rgba(226, 226, 226, 0.068);
+		width: 220px;
+		height: 200px;
+		transform: translateX(-50px);
+		border-radius: 6px;
+	}
+	.dropdown-menu > li {
+		align-items: center;
+		list-style: none;
+		align-items: center;
+		font-size: 18px;
+		margin: 15px;
+		font-weight: normal;
+	}
+	.dropdown-menu > li > a {
+		text-decoration: none;
+		color: white;
+		font-weight: normal;
+	}
+	.dropdown-menu:hover {
+		visibility: visible;
 	}
 }

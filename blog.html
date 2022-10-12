@@ -4,22 +4,58 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="/styles/blog.css" />
-		<title>Blog</title>
+		<link rel="stylesheet" href="/styles/index.css" />
+		<title>Abdallah Abou-Chahine</title>
 	</head>
 	<body>
 		<!-- beginning of navbar code -->
 		<header class="nav-container">
 			<nav class="nav-item name">
-				<h1><a href="index.html">Abdallah Abou-Chahine</a></h1>
+				<h1>
+					<a href="index.html" class="underline" id="name"
+						>Abdallah Abou-Chahine</a
+					>
+				</h1>
 			</nav>
 			<nav class="nav-item">
-				<h1><a href="">Portfolio</a></h1>
-				<h1><a href="">Blogs</a></h1>
+				<h2>
+					<a
+						href=""
+						id="portfolio"
+						class="nav-heading change-background-on-hover portfolio"
+						>Portfolio</a
+					>
+					<div class="dropdown-menu" id="dropdown-menu">
+						<li>
+							<a href="/technical-projects.html" class="underline"
+								>Technical Projects</a
+							>
+						</li>
+						<li>
+							<a href="/graphic-design.html" class="underline"
+								>Graphic Design</a
+							>
+						</li>
+						<li><a href="/art.html" class="underline">Art</a></li>
+					</div>
+				</h2>
+				<h2>
+					<a
+						href="/blog.html"
+						class="nav-heading change-background-on-hover blog"
+						>Blogs</a
+					>
+				</h2>
 			</nav>
-			<nav class="nav-item">
-				<h1><a href="">Github</a></h1>
-				<h1><a href="">Contact Me</a></h1>
+			<nav class="nav-item info">
+				<h2>
+					<a href="" class="nav-heading change-background-on-hover github"
+						>Github</a
+					>
+				</h2>
+				<h2>
+					<a href="" id="contact-btn" class="nav-heading contact">Contact Me</a>
+				</h2>
 			</nav>
 
 			<!-- burger menu only displays on mobile -->

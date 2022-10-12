@@ -119,3 +119,132 @@ body {
 	}
 }
 /*  End of responsive navbar */
+/* beginning of desktop header */
+@media (min-width: 900px) {
+	body {
+		height: 100%;
+		width: 100%;
+	}
+	.burger-nav {
+		display: none;
+	}
+	.nav-item.burger {
+		display: none;
+	}
+	.nav-container {
+		position: relative;
+		position: sticky;
+		top: 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		text-decoration: none;
+		background-color: #181818;
+	}
+	.nav-item {
+		display: flex;
+		justify-content: space-evenly;
+		width: 100%;
+		font-size: 165x;
+		color: #fff;
+	}
+	.nav-item.name h1 > a {
+		text-decoration: none;
+		color: #fff;
+		font-size: 18px;
+	}
+	.nav-item.info {
+		align-items: center;
+	}
+
+	.underline:hover {
+		-webkit-transition: border-color 0.9s ease;
+		transition: border-color 0.9s ease;
+	}
+
+	.underline:after {
+		content: "";
+		display: block;
+		width: 0;
+		height: 1px;
+		background-color: white;
+		-webkit-transition: width 0.9s;
+		transition: width 0.9s;
+	}
+
+	.underline:hover::after {
+		width: 100%;
+		-webkit-transition: width 0.9s;
+		transition: width 0.9s;
+	}
+
+	.nav-heading {
+		text-decoration: none;
+		font-size: 20px;
+		color: #fff;
+		font-weight: normal;
+		padding: 10px;
+	}
+
+	.nav-heading.contact {
+		display: block;
+		background-color: #fff;
+		color: black;
+		font-weight: bold;
+		padding: 10px 14px;
+		border-radius: 6px;
+		animation: bounce 1s infinite;
+	}
+	.nav-heading.contact:hover {
+		background-color: #dadada;
+		transition: all 0.1s;
+	}
+	@keyframes bounce {
+		0%,
+		100% {
+			transform: translateY(-7%);
+			animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+		}
+		50% {
+			transform: translateY(0);
+			animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+		}
+	}
+
+	.change-background-on-hover:hover {
+		background-color: rgba(226, 226, 226, 0.068);
+		border-radius: 6px;
+		transition: all 0.1s ease-in-out;
+	}
+
+	.dropdown-menu {
+		visibility: hidden;
+		position: absolute;
+		display: flex;
+
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin-top: 20px;
+		background-color: rgba(36, 36, 36);
+
+		width: 220px;
+		height: 200px;
+		transform: translateX(-50px);
+		border-radius: 6px;
+	}
+	.dropdown-menu > li {
+		align-items: center;
+		list-style: none;
+		align-items: center;
+		font-size: 18px;
+		margin: 15px;
+		font-weight: normal;
+	}
+	.dropdown-menu > li > a {
+		text-decoration: none;
+		color: white;
+		font-weight: normal;
+	}
+}
+/* end of desktop header */

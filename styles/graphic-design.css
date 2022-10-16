@@ -267,17 +267,19 @@ body {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
+		align-items: center;
+		align-items: baseline;
 	}
 	.graphic-post-img {
-		width: 320px;
-		height: 506px;
+		width: 420px;
+		height: fit-content;
 		z-index: 1;
 	}
 	.graphic-post-title {
 		color: white;
 	}
 	.graphic-image-container {
-		margin: 50px;
+		margin: 60px;
 	}
 
 	.graphic-image-container:nth-of-type(1) > img {
@@ -313,8 +315,10 @@ body {
 		object-fit: cover;
 		object-fit: scale-down;
 		width: 600px;
+		height: 600px;
 	}
 	.graphic-post-img:nth-of-type(8) {
-		width: 500px;
+		height: 600px;
+		width: 600px;
 	}
 }

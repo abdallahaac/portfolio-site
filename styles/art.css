@@ -269,3 +269,21 @@ body {
 	}
 }
 /* end of desktop header */
+
+@media (min-width: 900px) {
+	img {
+		width: 600px;
+		height: 800px;
+		object-fit: scale-down;
+		margin: 50px;
+	}
+	main {
+		display: flex;
+		justify-content: center;
+	}
+	.art-post-container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}

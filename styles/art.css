@@ -217,6 +217,7 @@ body {
 		border-radius: 6px;
 		animation: bounce 1s infinite;
 	}
+
 	.nav-heading.contact:hover {
 		background-color: #dadada;
 		transition: all 0.1s;

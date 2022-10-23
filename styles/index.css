@@ -483,6 +483,9 @@ body {
 		justify-content: center;
 		flex-direction: row;
 	}
+	.graphic-post-title {
+		text-align: center;
+	}
 }
 /* end of desktop art demo stylesheet */
 /* beginning of mobile art demo stylesheet */
